@@ -17,7 +17,7 @@
 
 
     <modules>
-        <module>react-frontend</module>
-        <module>spring-backend</module>
+        <module>taskmanager-front</module>
+        <module>taskmanager-back</module>
     </modules>
 </project>
