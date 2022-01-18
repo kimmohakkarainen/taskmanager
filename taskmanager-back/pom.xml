@@ -4,15 +4,15 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
-		<groupId>fi.esalary</groupId>
-		<artifactId>web-dispatcher</artifactId>
+		<groupId>fi.exadeci</groupId>
+		<artifactId>taskmanager</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<groupId>fi.esalary</groupId>
-	<artifactId>spring-backend</artifactId>
+	<groupId>fi.exadeci</groupId>
+	<artifactId>taskmanager-back</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>spring-backend</name>
-	<description>Web and API gateway for esalary</description>
+	<name>taskmanager-back</name>
+	<description>Web and API gateway for taskmanager</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>

@@ -3,15 +3,15 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>fi.esalary</groupId>
-	<artifactId>react-frontend</artifactId>
+	<groupId>fi.exadeci</groupId>
+	<artifactId>taskmanager-front</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>react-frontend</name>
+	<name>taskmanager-front</name>
 	<description>Front End UI</description>
 
 	<parent>
-		<groupId>fi.esalary</groupId>
-		<artifactId>web-dispatcher</artifactId>
+		<groupId>fi.exadeci</groupId>
+		<artifactId>taskmanager</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 
