@@ -1,13 +1,13 @@
-package fi.esalary.web;
+package fi.exadeci.taskmanager;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class WebDispatcherApplication {
+public class TaskManagerApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(WebDispatcherApplication.class, args);
+		SpringApplication.run(TaskManagerApplication.class, args);
 	}
 
 }

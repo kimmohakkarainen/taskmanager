@@ -1,4 +1,4 @@
-package fi.esalary.web.controller;
+package fi.exadeci.taskmanager.controller;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
