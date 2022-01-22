@@ -4,7 +4,6 @@ import { connect } from "react-redux";
 
 import { Navbar, Container, Nav, Row } from "react-bootstrap";
 import { Sidebar } from "../common/sidebar";
-import { fetchHelloWorld } from "../actions";
 
 const sidebar_table = [
   { path: "/employee", title: "Employee", icon: "IconEmployees" },
@@ -16,19 +15,11 @@ const sidebar_table = [
   { path: "/termination", title: "Termination", icon: "IconPile" }
 ];
 
-function DashboardView({ path, subpath, menubar }) {
-  useEffect(() => {
-    fetchHelloWorld();
-  }, []);
-
-  console.log(path);
-  console.log(subpath);
-  const sidebar = menubar[path].sidebar;
-  console.log(sidebar);
+function DashboardView({ menubar }) {
 
   return (
     <Row>
-      <Sidebar table={sidebar} />
+      <Sidebar table={sidebar_table} />
       <div className="col-md-9 ms-sm-auto col-lg-10 px-md-4">
         <div>Dashboard</div>
       </div>
@@ -42,7 +33,6 @@ function mapStateToProps(state) {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    fetchHelloWorld: (password) => dispatch(fetchHelloWorld(password))
   };
 };
 

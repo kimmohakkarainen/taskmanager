@@ -1,5 +1,5 @@
 import { client } from "./client";
 
-export const getHelloWorld = () => {
-  return client.get("/rest/apiv1/20220116");
+export const getMenu = () => {
+  return client.get("/api/v1/menu");
 };

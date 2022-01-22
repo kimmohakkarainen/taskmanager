@@ -1,12 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ReactDOM from "react-dom";
 import { connect } from "react-redux";
 
 import { Navbar, Container, Nav, Row } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
 
+import { fetchMenu } from "../actions";
 
-function Menubar({menubar }) {
+function Menubar({fetchMenu, menubar }) {
+
+  useEffect(() => {
+    fetchMenu();
+  }, []);
 
 	console.log('Menubar');
 	console.log(menubar);
@@ -41,7 +46,7 @@ function mapStateToProps(state) {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    fetchHelloWorld: (password) => dispatch(fetchHelloWorld(password))
+    fetchMenu: () => dispatch(fetchMenu())
   };
 };
 

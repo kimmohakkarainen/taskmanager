@@ -6,11 +6,12 @@ import { Navbar, Container, Nav, Row } from "react-bootstrap";
 
 import Menubar from "./mainview";
 import DashboardView from "./dashboardview";
+import ContentView from "./contentview";
 
-function DashboardViewParams() {
+function ContentViewParams() {
 	const params = useParams();
 	return (
-	<DashboardView path={params.path} subpath={params.subpath} />
+	<ContentView path={params.path} subpath={params.subpath} />
 	);
 }
 
@@ -21,8 +22,8 @@ export default function App() {
       <Container fluid>
         <Routes>
           <Route exact path="/" element={<DashboardView />} />
-          <Route path="/content/:path" element={<DashboardViewParams />} />
-          <Route path="/content/:path/:subpath" element={<DashboardViewParams />} />
+          <Route path="/content/:path" element={<ContentViewParams />} />
+          <Route path="/content/:path/:subpath" element={<ContentViewParams />} />
         </Routes>
       </Container>
     </BrowserRouter>
