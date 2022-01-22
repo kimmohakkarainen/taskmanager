@@ -13,9 +13,6 @@ function Menubar({fetchMenu, menubar }) {
     fetchMenu();
   }, []);
 
-	console.log('Menubar');
-	console.log(menubar);
-	console.log(Object.values(menubar));
 	const values = Object.values(menubar);
 	return (
 		<Navbar variant="dark" bg="dark" expand="md" sticky="top" className="p-0 shadow">
