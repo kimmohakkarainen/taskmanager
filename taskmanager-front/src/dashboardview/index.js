@@ -16,14 +16,19 @@ const sidebar_table = [
   { path: "/termination", title: "Termination", icon: "IconPile" }
 ];
 
-function DashboardView({ person, helloWorld, fetchHelloWorld }) {
+function DashboardView({ path, subpath, menubar }) {
   useEffect(() => {
     fetchHelloWorld();
   }, []);
 
+  console.log(path);
+  console.log(subpath);
+  const sidebar = menubar[path].sidebar;
+  console.log(sidebar);
+
   return (
     <Row>
-      <Sidebar table={sidebar_table} />
+      <Sidebar table={sidebar} />
       <div className="col-md-9 ms-sm-auto col-lg-10 px-md-4">
         <div>Dashboard</div>
       </div>
