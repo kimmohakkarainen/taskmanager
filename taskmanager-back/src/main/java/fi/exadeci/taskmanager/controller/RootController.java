@@ -1,4 +1,4 @@
-package fi.esalary.web.controller;
+package fi.exadeci.taskmanager.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

@@ -4,7 +4,6 @@ import { connect } from "react-redux";
 
 import { Navbar, Container, Nav, Row } from "react-bootstrap";
 import { Sidebar } from "../common/sidebar";
-import { fetchHelloWorld } from "../actions";
 
 import { ProgressTable } from "./progress"
 
@@ -18,10 +17,7 @@ const sidebar_table = [
   { path: "/termination", title: "Termination", icon: "IconPile" }
 ];
 
-function DashboardView({ person, helloWorld, fetchHelloWorld }) {
-  useEffect(() => {
-    fetchHelloWorld();
-  }, []);
+function DashboardView({ menubar }) {
 
   return (
     <Row>
@@ -39,7 +35,6 @@ function mapStateToProps(state) {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    fetchHelloWorld: (password) => dispatch(fetchHelloWorld(password))
   };
 };
 

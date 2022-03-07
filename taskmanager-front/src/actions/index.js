@@ -1,12 +1,12 @@
 import * as api from "../api";
 /* export * from "./authentication"; */
 
-export const fetchHelloWorld = () => {
+export const fetchMenu = () => {
   return (dispatch) => {
     api
-      .getHelloWorld()
+      .getMenu()
       .then((resp) => {
-        dispatch(fetchHelloWorldSucceeded(resp.data));
+        dispatch(fetchMenuSucceeded(resp.data));
       })
       .catch((e) => {
         dispatch(fetchError(e));
@@ -14,12 +14,15 @@ export const fetchHelloWorld = () => {
   };
 };
 
-const fetchHelloWorldSucceeded = (data) => {
+const fetchMenuSucceeded = (data) => {
   return {
-    type: "FETCH_HELLO_WORLD",
-    payload: { helloWorld: data }
+    type: "FETCH_MENU",
+    payload: { menubar: data }
   };
 };
+
+
+
 
 const fetchError = (error) => {
   return {

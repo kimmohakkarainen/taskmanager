@@ -27,7 +27,7 @@ export function Sidebar({ table }) {
       >
         {table.map((row) => {
           return (
-            <LinkContainer to={row.path}>
+            <LinkContainer key={row.path} to={row.path}>
               <Nav.Link>
                 {row.icon === "IconEmployees" && <IconEmployees />}
                 {row.icon === "IconShoppingCart" && <IconShoppingCart />}
