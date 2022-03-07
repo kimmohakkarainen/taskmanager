@@ -6,6 +6,8 @@ import { Navbar, Container, Nav, Row } from "react-bootstrap";
 import { Sidebar } from "../common/sidebar";
 import { fetchHelloWorld } from "../actions";
 
+import { ProgressTable } from "./progress"
+
 const sidebar_table = [
   { path: "/employee", title: "Employee", icon: "IconEmployees" },
   { path: "/wellbeing", title: "Wellbeing", icon: "IconChart" },
@@ -25,7 +27,7 @@ function DashboardView({ person, helloWorld, fetchHelloWorld }) {
     <Row>
       <Sidebar table={sidebar_table} />
       <div className="col-md-9 ms-sm-auto col-lg-10 px-md-4">
-        <div>Dashboard</div>
+        <ProgressTable />
       </div>
     </Row>
   );
